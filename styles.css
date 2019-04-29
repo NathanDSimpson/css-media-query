@@ -1,0 +1,155 @@
+header, h1, nav, div {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+    background: black;
+    height: 8vh;
+    width: 100%;
+    /* so this doesnt move when we scroll */
+    position: fixed;
+    /* to tell the navbar what to "fix" to */
+    top: 0;
+    display: flex;
+    /* center our content vertically */
+    align-items: center;
+    /* evenly space our items on the nav bar */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: rgb(206, 206, 22);
+    padding-left: 1vw;
+    font-family: 'Yesteryear', cursive;
+}
+
+.menu {
+    display: flex;
+    color: white;
+}
+
+.navlink {
+    padding-right: 1vw;
+}
+
+.hamburgermenu, .dropdown {
+    display: none;
+}
+
+.hamburgermenu img {
+    height: 7vh;
+  }
+
+
+.calltoaction {
+    font-size: 1em;
+    height: 50px;
+    width: 200px;
+    background: rgb(206, 206, 22);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.greeting1, .greeting2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.greeting1 {
+    height: 40%;
+    align-items: flex-end;
+    font-family: 'Bitter', serif;
+    font-size: 2.6em;
+}
+.greeting2 {
+    padding-top: 7%;
+    height: 30%;
+    align-items: flex-start; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5em;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.hero {
+    margin-top: 8vh;
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://c.pxhere.com/photos/8a/dd/watch_wallet_glass_pen_phone-98958.jpg!d');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    /* justify-content: center; */
+}
+
+@media (max-width: 990px){
+    .navlink{
+        display: none;
+    }
+
+    .hamburgermenu {
+        width: 90px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        padding-right: 1vw;
+        align-items: center;
+        background: rgb(206, 206, 22);
+        border-radius: 5px;
+        margin-right: 1vw;
+    }
+
+    .menutext {
+        font-family: 'Open Sans', sans-serif;
+        margin-right: 1vw;
+        margin-left:  1vw;
+    }
+
+    .hamburgermenu img {
+        height: 7vh;
+    }
+
+
+}
+
+
+@media (max-width: 770px){
+    .hero {
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .greeting1 {
+        font-size: 1.6em;
+    }
+
+    .greeting2 {
+        font-size: 3.5em;
+    }
+/* 
+    .greeting1, .greeting2 {
+        display: flex;
+        justify-content: center; */
+
+}
+
